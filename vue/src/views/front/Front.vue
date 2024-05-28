@@ -3,17 +3,15 @@
         <!--    头部-->
         <div style="display: flex; height: 60px; line-height: 60px; border-bottom: 1px solid #eee">
             <div style="width: 300px; display: flex; padding-left: 30px">
-                <div style="width: 60px">
-                    <img src="../../assets/logoSub.png" alt=""
-                         style="width: 50px; position: relative; top: 5px; right: 0">
-                </div>
-                <div style="flex: 1">欢迎来到xx系统</div>
+                <div style="flex: 1">自闭症辅助治疗系统</div>
             </div>
             <div style="flex: 1">
                 <el-menu :default-active="'1'" class="el-menu-demo" mode="horizontal" router>
-                    <el-menu-item index="/front/home">首页</el-menu-item>
-                    <el-menu-item index="/front/video">视频播放</el-menu-item>
-                    <el-menu-item index="/front/article">文章列表</el-menu-item>
+                    <el-menu-item index="/front/Home">首页</el-menu-item>
+                    <el-menu-item index="/front/modelAnalysis">大模型分析</el-menu-item>
+                    <el-menu-item index="/front/rate">自闭症评级</el-menu-item>
+                    <el-menu-item index="">个人信息管理</el-menu-item>
+                    <el-menu-item index="">历史数据</el-menu-item>
                     <el-submenu index="2">
                         <template slot="title">我的工作台</template>
                         <el-menu-item>选项1</el-menu-item>
@@ -71,7 +69,7 @@
             }
         },
         created() {
-
+            document.title = "自闭症辅助治疗系统";
         },
         methods: {
             logout() {

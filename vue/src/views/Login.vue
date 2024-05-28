@@ -5,11 +5,11 @@
             <el-form :model="user" :rules="rules" ref="userForm">
                 <el-form-item prop="username">
                     <el-input size="medium" style="margin: 10px 0" prefix-icon="el-icon-user"
-                              v-model="user.username"></el-input>
+                              v-model="user.username" placeholder="请输入用户名"></el-input>
                 </el-form-item>
                 <el-form-item prop="password">
                     <el-input size="medium" style="margin: 10px 0" prefix-icon="el-icon-lock" show-password
-                              v-model="user.password"></el-input>
+                              v-model="user.password" placeholder="请输入密码"></el-input>
                 </el-form-item>
                 <el-form-item style="margin: 10px 0; text-align: right">
                     <el-button type="primary" size="small" autocomplete="off" @click="login">登录</el-button>
@@ -73,7 +73,8 @@
 <style>
     .wrapper {
         height: 100vh;
-        background-image: linear-gradient(to bottom right, #FC466B, #3F5EFB);
+        background: url("../assets/wallpaper.jpg") no-repeat;
+        background-size: cover;
         overflow: hidden;
     }
 </style>

@@ -73,7 +73,8 @@
 <style>
     .wrapper {
         height: 100vh;
-        background-image: linear-gradient(to bottom right, #FC466B, #3F5EFB);
+        background: url("../assets/wallpaper.jpg") no-repeat;
+        background-size: cover;
         overflow: hidden;
     }
 </style>
